@@ -1,0 +1,168 @@
+<html>
+<title>
+Report
+</title>
+
+  <head>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Section', 'Score'],
+          ['Spellings',     40],
+          ['Sentence formation & completion',      20],
+          ['Fundamentals of Grammer',  80],
+          ['Ordering of Words', 20]
+         
+        ]);
+
+        var options = {
+          title: 'Performance'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+
+ 
+  <center>
+ 
+<img src="https://cdn4.iconfinder.com/data/icons/business-conceptual-part1-1/513/business-woman-512.png" width="100" height="100" alt="The Scream">
+
+<h3>Name : Patrick D</h3>
+<h3>ID : S554-560-755</h3>
+<h3>Overall score : 40%</h3>
+<h3>Appeared on :07/28/2020</h3>
+<h3>Proficiency : Intermediate</h3>
+
+</center>
+  
+ 
+ <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+
+<hr>
+<h2>Summary</h2>
+
+<table>
+  <tr>
+                    <th scope="col">Sr. no.</th>
+                    <th scope="col">Section</th>
+                    <th scope="col">Total Questions</th>
+                    <th scope="col">Correct</th>
+					  <th scope="col">Score</th>
+					    <th scope="col">Status</th>
+						<th scope="col">Violation Count</th>
+						 
+ 
+  <tr>
+    <td>1</td>
+    <td>Spellings</td>
+    <td>5</td>
+	<td>2</td>
+    <td>40%</td>
+    <td>Intermediate</td>
+	<td>0</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Sentence formation & completion</td>
+    <td>5</td>
+	<td>1</td>
+    <td>20%</td>
+    <td>Beginner</td>
+	<td>0</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Fundamentals of Grammer</td>
+    <td>5</td>
+	<td>4</td>
+    <td>80%</td>
+    <td>Beginner</td>
+	<td>2</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Ordering of Words</td>
+    <td>5</td>
+	<td>1</td>
+    <td>20%</td>
+    <td>Beginner</td>
+	<td>0</td>
+  </tr>
+ 
+</table>
+
+
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+
+<div class="container">
+  <h2>Learning Status</h2>
+   
+  <div class="progress">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+      40%
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+      20%
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+      80% 
+    </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width:20%">
+      20% 
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div class="w3-container">
+  <h2>Overall Progress</h2>
+ 
+
+ 
+  <div class="w3-light-grey w3-round-xlarge">
+    <div class="w3-container w3-blue w3-round-xlarge" style="width:40%">40%</div>
+  </div>
+</div>
+
+</body>	
+  </body>
